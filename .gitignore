@@ -1,2 +1,5 @@
 # This is managed by an external repo
 .themes/Tokyonight-GTK-Theme/
+
+# Ignored tmux plugins
+tmux/plugins
