@@ -1,0 +1,17 @@
+# The defaults below could be overridden in $XDG_CONFIG_HOME/swaylock/config
+#  (~/.config/swaylock/config).
+#
+# Image path supports environment variables and shell expansions,
+# e.g. image=$HOME/Pictures/default.png
+image=/home/chet/.dotfiles/.config/backgrounds/abstract.png
+scaling=center
+font=FiraCodeNerdFont
+inside-wrong-color=#f7768eff
+inside-ver-color=#6582c2
+inside-clear-color=#d5b281ff
+ring-color=#7aa2f7ff
+ring-ver-color=#325ab9
+ring-clear-color=#e0af68ff
+text-color=#d5d5d5aa
+line-color=#16141bff
+key-hl-color=#bb9af7ff

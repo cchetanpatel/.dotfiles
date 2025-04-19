@@ -1,0 +1,15 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 86,
+                "origin_hash": "6a9ff56ac0cd96d0ade26e5e86ed3fae"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_BACKSLASH",
+        "name": "Remap slash",
+        "mapping_type": "key_macro"
+    }
+]
