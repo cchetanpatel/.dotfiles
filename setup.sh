@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git clone https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme.git $HOME/.dotfiles/.themes/Tokyonight-GTK-Theme
+
 ln -s $HOME/.dotfiles/.config/sway $HOME/.config/sway 2>>/dev/null
 ln -s $HOME/.dotfiles/.config/rofi $HOME/.config/rofi 2>>/dev/null
 ln -s $HOME/.dotfiles/.config/Thunar $HOME/.config/Thunar 2>>/dev/null
