@@ -15,6 +15,7 @@
         "sway/window"
     ],
     "modules-right": [
+        "mpd",
         "idle_inhibitor",
         "pulseaudio",
         "network",
@@ -26,7 +27,8 @@
         "sway/language",
         "battery",
         "clock",
-        "tray"
+        "tray",
+        "custom/power"
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -65,36 +67,45 @@
         "tooltip-format": "{app}: {title}"
     },
     "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "format": "{stateIcon} {consumeIcon} {randomIcon} {repeatIcon} {singleIcon} {artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}%   ",
+        "format-disconnected": "Disconnected   ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped   ",
         "unknown-tag": "N/A",
         "interval": 5,
         "consume-icons": {
             "on": " "
         },
         "random-icons": {
-            "off": "<span color=\"#f53c3c\"></span> ",
+            "off": "<span color=\"#f53c3c\">   </span> ",
             "on": " "
         },
         "repeat-icons": {
             "on": " "
         },
         "single-icons": {
-            "on": "1 "
+            "on": " 1 "
         },
         "state-icons": {
             "paused": "",
             "playing": ""
         },
         "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)"
+        "tooltip-format-disconnected": "MPD (disconnected)",
+		"menu": "on-click",
+		"menu-file": "$HOME/.config/waybar/mpd_menu.xml", // Menu file in resources folder
+		"menu-actions": {
+			"play": "mpc play",
+			"stop": "mpc stop"
+		}
+
+
+
     },
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": " ",
+            "deactivated": " "
         }
     },
     "tray": {

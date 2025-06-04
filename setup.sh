@@ -9,8 +9,11 @@ ln -s $HOME/.dotfiles/.config/waybar $HOME/.config/waybar 2>>/dev/null
 ln -s $HOME/.dotfiles/.config/gtk-3.0 $HOME/.config/gtk-3.0 2>>/dev/null
 ln -s $HOME/.dotfiles/.config/gtk-4.0 $HOME/.config/gtk-4.0 2>>/dev/null
 ln -s $HOME/.dotfiles/.config/ghostty $HOME/.config/ghostty 2>>/dev/null
+ln -s $HOME/.dotfiles/.config/ncmpcpp $HOME/.config/ncmpcpp 2>>/dev/null
+ln -s $HOME/.dotfiles/.config/mpd $HOME/.config/mpd 2>>/dev/null
 
 ln -s $HOME/.dotfiles/.config/backgrounds $HOME/.config/backgrounds 2>>/dev/null
+ln -s $HOME/.dotfiles/.local/.bin $HOME/.local/.bin 2>>/dev/null
 
 rm $HOME/.bashrc
 ln -s $HOME/.dotfiles/.bashrc $HOME/.bashrc 2>>/dev/null

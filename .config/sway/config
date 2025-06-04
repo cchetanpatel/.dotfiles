@@ -54,6 +54,8 @@ for_window [app_id=".*"] border pixel 1
 
 # Floating Defaults
 for_window [app_id="localsend"] floating enable
+for_window [app_id="strawberry"] floating enable
+for_window [app_id="imv"] floating enable
 
 
 # Example configuration:
@@ -248,7 +250,9 @@ bindsym $mod+r mode "resize"
 # Screenshots
 #
 
-bindsym $mod+p exec grim -g "$(slurp)" - | wl-copy
+bindsym $mod+p exec grim -g "$(slurp)" - | wl-copy;
+
+bindsym $mod+Shift+P exec grim "$(xdg-user-dir PICTURES)/$(date +'%s_grim.png')";
 
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d

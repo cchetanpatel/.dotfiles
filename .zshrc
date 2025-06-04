@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/.bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -88,6 +88,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='nvim'
 # fi
 
+export SUDO_EDITOR=/opt/nvim-linux-x86_64/bin/nvim
+
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
@@ -105,5 +107,10 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
+# TokyoNight-safe LS_COLORS
+export LS_COLORS='di=1;36:ln=1;35:so=1;33:pi=1;33:ex=1;32:bd=1;33:cd=1;33:or=1;31:mi=1;31:tw=1;34:ow=1;34:st=1;34'
+
+
 eval $(ssh-agent -s)
+
 
