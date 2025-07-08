@@ -8,6 +8,7 @@ sudo dnf install -y fzf
 sudo dnf install -y gcc
 sudo dnf install -y ripgrep
 sudo dnf install -y icat
+sudo dnf install -y mscore-fonts-all
 
 
 # Lazy Git
