@@ -3,3 +3,6 @@
 
 # Ignored tmux plugins
 tmux/plugins
+
+# Ignored mpd log files
+.config/mpd/mpd.log
