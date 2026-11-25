@@ -114,3 +114,7 @@ export LS_COLORS='di=1;36:ln=1;35:so=1;33:pi=1;33:ex=1;32:bd=1;33:cd=1;33:or=1;3
 eval $(ssh-agent -s)
 
 
+
+export NVM_DIR="$HOME/.local/opt/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

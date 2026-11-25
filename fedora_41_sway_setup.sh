@@ -42,6 +42,9 @@ wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/do
 sudo dnf install -y input-remapper
 sudo systemctl enable --now input-remapper
 
+# Piper
+sudo dnf install -y piper
+
 # Oh-My-Zsh
 sudo dnf install -y zsh # Ensure zsh is installed first
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
